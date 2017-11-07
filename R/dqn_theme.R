@@ -1,17 +1,9 @@
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Cmd + Shift + B'
-#   Check Package:             'Cmd + Shift + E'
-#   Test Package:              'Cmd + Shift + T'
 require(ggplot2)
-a_theme<- function(
-  base_family="PT Sans Narrow",
+##' DQN personal website themes
+dqn_theme<- function(
+  base_family = "Raleway Light" ,
   base_size = 10,
-  plot_title_family='Slabo 27px',
+  plot_title_family= "Zilla Slab",
   plot_title_size = 23,
   plot_title_face="plain",
   subtitle_family=base_family,
@@ -68,7 +60,6 @@ a_theme<- function(
   aplot <- aplot + theme(plot.subtitle=element_text(hjust=0, size=subtitle_size, margin=margin(t = 8, b = 12, unit = "pt"),family=subtitle_family, face=subtitle_face,color='#565656', lineheight=1))
   aplot <- aplot + theme(plot.caption=element_text(hjust=1, size=caption_size,  family=caption_family, face=caption_face,color='#565656'))
   aplot
-
 }
 
 #fun color palette
