@@ -2,7 +2,7 @@ require(ggplot2)
 ##' DQN personal website themes
 dqn_theme<- function(
   base_family = "Raleway Light" ,
-  base_size = 10,
+  base_size = 12,
   plot_title_family= "Zilla Slab",
   plot_title_size = 23,
   plot_title_face="plain",
@@ -16,9 +16,9 @@ dqn_theme<- function(
   caption_size = 10,
   caption_face = "plain",
   axis_text_size = base_size,
-  axis_title_family = base_family,
+  axis_title_family = "Raleway",
   axis_title_size = 10,
-  axis_title_face = "plain",
+  axis_title_face = "bold",
   grid_col='#dedede',
   grid=TRUE,
   noaxis=FALSE,
