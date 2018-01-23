@@ -68,3 +68,8 @@ a_pal <- function() { scales::manual_pal(a_palette) }
 a_scale_color <- function(...) { discrete_scale("color", "a", a_pal(), ...) }
 a_scale_fill <- function(...) { discrete_scale("fill", "a", a_pal(), ...) }
 
+
+dqn_style_highcharter <- function() {
+  list.files(system.file("extdata", package="dqnTools"), 'dqn_hc_theme.html', full.names = T)
+}
+
