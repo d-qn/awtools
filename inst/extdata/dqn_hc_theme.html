@@ -1,4 +1,12 @@
-<link href="https://fonts.googleapis.com/css?family=Raleway|Zilla+Slab" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway|Zilla+Slab:400,600|Open+Sans+Condensed:300,700" rel="stylesheet">
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Zilla+Slab|Zilla+Slab+Highlight:400,700" rel="stylesheet">
+font-family: 'Zilla Slab', serif;
+font-family: 'Zilla Slab Highlight', cursive;
+font-family: 'Raleway', sans-serif;
+ -->
+
 <style>
 
 /* ensure data labels are not visible over the tooltip:
@@ -17,13 +25,14 @@ http://stackoverflow.com/questions/15130311/highcharts-labels-visible-over-toolt
 }
 
 /*  #######   header and footer styling   ########*/
-body, .descr, .h2abs, #cite, .footer {
-   font-family: 'Zilla Slab', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, .h2abs, {
+body, .descr, #cite, .footer {
    font-family: 'Raleway', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, .h2abs {
+	font-family: 'Zilla Slab', serif;
+}
+
 body {
    max-width:100%;
    text-rendering:optimizeLegibility;
@@ -31,7 +40,7 @@ body {
    margin:9px 18px 0px 1px;
 }
 html { font-size: 17px; }
-  
+
 @media only screen and (max-width: 600px) {
   html { font-size: 15px; }
 }
@@ -56,14 +65,15 @@ html { font-size: 17px; }
 }
 
 .graphic{
-  max-width:100%;    
-}    
-    
+  max-width:100%;
+}
+
 .descr {
  font-size: 1em;
  font-weight: lighter;
  color: #707070;
- margin-bottom:4px;
+ margin-bottom:10px;
+ line-height: 1.4rem;
  margin-left:3px;
 }
 
@@ -76,16 +86,16 @@ h1 {
 }
 
 h2 {
-   font-size:1.2em;
-   font-weight: bolder;
+   font-size:1.6em;
+   font-weight: 400;
    color: #404040;
-   line-height: 1.5rem;
-   margin:8px 0px 8px 3px;
+   line-height: 1.8rem;
+   margin:8px 0px 10px 3px;
 }
 
 .h2abs {
-   font-size:1.2em;
-   font-weight: bolder;
+   font-size:1.6em;
+   font-weight: 400;
    line-height: 1.6rem;
    margin-top:14px;
    margin-left:12px;
@@ -95,7 +105,7 @@ h2 {
 
 h3 {
    color: #595959;
-   font-size:1em;
+   font-size:1.4em;
    margin-left:3px;
    margin:7px 0px 7px 3px;
 }
